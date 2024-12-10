@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Shaik Baba Hassan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+            margin: 0;
+            text-align: center;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid red;
+            margin-top: 20px;
+            box-shadow: 0 0 15px red;
+            transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+        .profile-pic:hover {
+            box-shadow: 0 0 30px red, 0 0 60px white; /* Increased shadow effect */
+            transform: scale(1.1); /* Slight zoom-in effect */
+        }
+        nav {
+            margin-top: 30px; /* Adds spacing below the profile picture */
+        }
+        nav a {
+            margin: 15px;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px 20px;
+            border: 2px solid red;
+            border-radius: 5px;
+            transition: all 0.3s;
+            position: relative;
+            display: inline-block;
+            background: black; /* Adds background to buttons */
+        }
+        nav a:hover {
+            background-color: red;
+            color: black;
+            box-shadow: 0 0 20px white;
+        }
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -10px; /* Moves shadow below the buttons */
+            left: 10%;
+            width: 80%;
+            height: 5px;
+            background-color: red;
+            box-shadow: 0 0 10px red;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+    <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic">
+    <h1>Shaik Baba Hassan</h1>
+    <p>Aspiring Software Engineer | Java Full Stack Developer</p>
+    <nav>
+        <a href="/projects">Projects</a>
+        <a href="/education">Education</a>
+        <a href="/skills">Skills</a>
+        <a href="/contact">Contact</a>
+    </nav>
+</body>
+</html>

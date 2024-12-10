@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            text-shadow: 0 0 10px red;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid red;
+            background: rgba(255, 0, 0, 0.1);
+            box-shadow: 0 0 10px red;
+            display: flex;
+            align-items: center;
+        }
+        li img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        
+         nav {
+        text-align: center; /* Center the navigation */
+        margin-top: 20px;  /* Add spacing above the buttons */
+    }
+    .button {
+        display: inline-block; /* Makes the links behave like buttons */
+        background-color: red; /* Button background color */
+        color: white; /* Button text color */
+        font-size: 18px; /* Font size for the button text */
+        padding: 10px 20px; /* Padding inside the button */
+        border: none; /* Remove default border */
+        border-radius: 5px; /* Rounded corners */
+        text-decoration: none; /* Remove underline */
+        transition: all 0.3s ease-in-out; /* Smooth hover effects */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+    }
+    .button:hover {
+        background-color: white; /* Change background color on hover */
+        color: red; /* Change text color on hover */
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4); /* Deepen shadow on hover */
+        transform: translateY(-2px); /* Lift the button on hover */
+    }
+    </style>
+</head>
+<body>
+    <h1>Skills</h1>
+    <ul>
+        <li>
+            <img src="images/c.png" alt="C Icon">
+            C Programming
+        </li>
+        <li>
+            <img src="images/java.png" alt="Java Icon">
+            Java (JSE, JEE)
+        </li>
+        <li>
+            <img src="images/coding.png" alt="HTML Icon">
+            Web Technologies: HTML, CSS, JSP
+        </li>
+        <li>
+            <img src="images/database-storage.png" alt="MySQL Icon">
+            Databases: MySQL, Oracle
+        </li>
+        <li>
+            <img src="images/framework.png" alt="Hibernate Icon">
+            Frameworks: Hibernate, Spring-Core, Spring-MVC
+        </li>
+        
+        <nav>
+        <a href="/" class="button">Back to Home</a>
+    </nav>
+        
+    </ul>
+</body>
+</html>
